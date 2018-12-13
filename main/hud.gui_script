@@ -1,0 +1,79 @@
+--local flow = require "ludobits.m.flow"
+
+local function update_health(self, character, amount)
+	local health = {}
+	if character == "jack" then
+		health = self.jack_health
+	elseif character == "robot" then
+		health = self.robot_health
+	end
+	local count = table.getn(health)
+	for i, v in pairs(health) do
+		--print("health["..i.."] = "..(count - i) * 20)
+		if (count - i) * 20 == amount then
+			print("setting " .. gui.get_id(v) .. "enabled")
+			gui.set_enabled(v, true)
+		else
+			gui.set_enabled(v, false)
+		end
+	end
+	
+end
+
+local function update_score(self, score)
+	gui.set_text(gui.get_node("score"), tostring(score or 0))
+end
+
+local function show_message(self, message)
+	print("show_message", message)
+	--self.message_node = gui.get_node("message")
+	gui.set_enabled(self.message_node, true)
+	gui.set_text(self.message_node, message)
+	gui.set_color(self.message_node, vmath.vector4(0, 0, 0, 1))
+end
+
+
+function init(self)
+	self.jack_health = {gui.get_node("jack_health_100"),
+		gui.get_node("jack_health_80"),
+		gui.get_node("jack_health_60"),
+		gui.get_node("jack_health_40"),
+		gui.get_node("jack_health_20"),
+		gui.get_node("jack_health_0")
+	}
+	self.robot_health = {gui.get_node("robot_health_100"),
+		gui.get_node("robot_health_80"),
+		gui.get_node("robot_health_60"),
+		gui.get_node("robot_health_40"),
+		gui.get_node("robot_health_20"),
+		gui.get_node("robot_health_0")
+	}
+	self.message_node = gui.get_node("message")
+	update_health(self, 100)
+	gui.set_enabled(self.message_node, false)
+end
+
+
+function final(self)
+	--flow.stop()
+end
+
+function update(self, dt)
+	--flow.update(dt)
+end
+
+function on_message(self, message_id, message, sender)
+	print(message_id)
+	--flow.on_message(message_id, message, sender)
+	if message_id == hash("update_jack_health") then
+		update_health(self, "jack", message.health)
+	elseif message_id == hash("update_robot_health") then
+		update_health(self, "robot", message.health)
+	elseif message_id == hash("update_score") then
+		update_score(self, message.score)
+	elseif message_id == hash("show_message") then
+		show_message(self, message.text)
+	elseif message_id == hash("game_over") then
+		show_message(self, "GAME OVER")
+	end
+end

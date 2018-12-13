@@ -1,0 +1,327 @@
+images {
+  image: "/assets/BG.png"
+}
+images {
+  image: "/assets/Robot/Robot Health.png"
+}
+images {
+  image: "/assets/Robot/Robot Health 2.png"
+}
+images {
+  image: "/assets/Robot/Robot Health 2 2.png"
+}
+images {
+  image: "/assets/Robot/Robot Health 2 2 2.png"
+}
+images {
+  image: "/assets/Robot/Robot Health 2 2 2 2.png"
+}
+images {
+  image: "/assets/Robot/Robot Health 2 2 2 2 2.png"
+}
+images {
+  image: "/assets/Jack/JAck Health.png"
+}
+images {
+  image: "/assets/Jack/JAck Health 2.png"
+}
+images {
+  image: "/assets/Jack/JAck Health 2 2.png"
+}
+images {
+  image: "/assets/Jack/JAck Health 2 2 2 2.png"
+}
+images {
+  image: "/assets/Jack/JAck Health 2 2 2.png"
+}
+images {
+  image: "/assets/Jack/JAck Health 2 2 2 2 2.png"
+}
+animations {
+  id: "idle"
+  images {
+    image: "/assets/Jack/Idle (1).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (2).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (3).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (4).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (5).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (6).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (7).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (8).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (9).png"
+  }
+  images {
+    image: "/assets/Jack/Idle (10).png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "anim_run"
+  images {
+    image: "/assets/Jack/Run (1).png"
+  }
+  images {
+    image: "/assets/Jack/Run (2).png"
+  }
+  images {
+    image: "/assets/Jack/Run (3).png"
+  }
+  images {
+    image: "/assets/Jack/Run (4).png"
+  }
+  images {
+    image: "/assets/Jack/Run (5).png"
+  }
+  images {
+    image: "/assets/Jack/Run (6).png"
+  }
+  images {
+    image: "/assets/Jack/Run (7).png"
+  }
+  images {
+    image: "/assets/Jack/Run (8).png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "anim_jump"
+  images {
+    image: "/assets/Jack/Jump01.png"
+  }
+  images {
+    image: "/assets/Jack/Jump02.png"
+  }
+  images {
+    image: "/assets/Jack/Jump03.png"
+  }
+  images {
+    image: "/assets/Jack/Jump04.png"
+  }
+  images {
+    image: "/assets/Jack/Jump05.png"
+  }
+  images {
+    image: "/assets/Jack/Jump06.png"
+  }
+  images {
+    image: "/assets/Jack/Jump07.png"
+  }
+  images {
+    image: "/assets/Jack/Jump08.png"
+  }
+  images {
+    image: "/assets/Jack/Jump09.png"
+  }
+  images {
+    image: "/assets/Jack/Jump10.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "anim_fall"
+  images {
+    image: "/assets/Jack/Jump10.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "robot_anim_run"
+  images {
+    image: "/assets/Robot/Run (1).png"
+  }
+  images {
+    image: "/assets/Robot/Run (2).png"
+  }
+  images {
+    image: "/assets/Robot/Run (3).png"
+  }
+  images {
+    image: "/assets/Robot/Run (4).png"
+  }
+  images {
+    image: "/assets/Robot/Run (5).png"
+  }
+  images {
+    image: "/assets/Robot/Run (6).png"
+  }
+  images {
+    image: "/assets/Robot/Run (7).png"
+  }
+  images {
+    image: "/assets/Robot/Run (8).png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "robot_anim_jump"
+  images {
+    image: "/assets/Robot/Jump (1).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (2).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (3).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (4).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (5).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (6).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (7).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (8).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (9).png"
+  }
+  images {
+    image: "/assets/Robot/Jump (10).png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "robot_anim_idle"
+  images {
+    image: "/assets/Robot/Idle (1).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (2).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (3).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (4).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (5).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (6).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (7).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (8).png"
+  }
+  images {
+    image: "/assets/Robot/Idle (9).png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "robot_anim_attack"
+  images {
+    image: "/assets/Robot/Melee (1).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (2).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (3).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (4).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (5).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (6).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (7).png"
+  }
+  images {
+    image: "/assets/Robot/Melee (8).png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "anim_attack"
+  images {
+    image: "/assets/Jack/Attack01.png"
+  }
+  images {
+    image: "/assets/Jack/Attack02.png"
+  }
+  images {
+    image: "/assets/Jack/Attack03.png"
+  }
+  images {
+    image: "/assets/Jack/Attack04.png"
+  }
+  images {
+    image: "/assets/Jack/Attack05.png"
+  }
+  images {
+    image: "/assets/Jack/Attack06.png"
+  }
+  images {
+    image: "/assets/Jack/Attack07.png"
+  }
+  images {
+    image: "/assets/Jack/Attack08.png"
+  }
+  images {
+    image: "/assets/Jack/Attack09.png"
+  }
+  images {
+    image: "/assets/Jack/Attack10.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 15
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0
